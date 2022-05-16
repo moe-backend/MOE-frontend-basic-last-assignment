@@ -1,0 +1,37 @@
+@use "../../variables" as *;
+
+.title {
+    font-family: $fontfamily-mincho;
+    font-size: $XL;
+    width: 287px;
+    height: 54px;
+    padding: 0px 0px 10px 0px;
+    text-shadow: 0px 3px 5px $gray_nobel;
+
+}
+
+.explain {
+    font-family: $fontfamily-gothic;
+    font-size: $S;
+    width: 84px;
+    height: 36px;
+    text-shadow: 0px 3px 5px $gray_nobel;
+    margin-left: 101.5px;
+}
+
+.title2 {
+    font-family: $fontfamily-mincho;
+    font-size: $L;
+    width: 160px;
+    height: 30px;
+    padding: 0px 0px 8px 0px;
+
+}
+
+.explain2 {
+    font-family: $fontfamily-gothic;
+    font-size: $S;
+    width: 84px;
+    height: 28px;
+    margin-left: 38px;
+}
