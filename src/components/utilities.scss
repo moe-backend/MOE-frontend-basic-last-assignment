@@ -1,8 +1,5 @@
-/* 使用例 */
-h2 {
-  font-size: 38px;
-}
+@use "./variables" as *;
 
-.fontfamily-gothic{
-  font-family:"游ゴシック体, Yu Gothic, YuGothic, sans-serif";
+body{
+  font-family: $fontfamily-gothic;
 }

@@ -6,8 +6,8 @@
     font-family: $fontfamily-gothic;
     font-size: $S;
     display: block;
-    width: 180px;
-    height: 45px;
+    width: 200px;
+    height: 55px;
     padding: 0px 16px;
     display: flex;
     align-items: center;
@@ -17,42 +17,21 @@
 .button:hover {
     background-color: $orange_bistre;
     transition: all 0.2s ease;
-}
-
-.button2{
     color: $white;
-    background-color: $black;
-    font-family: $fontfamily-gothic;
-    font-size: $S;
-    display: block;
-    width: 150px;
-    height: 55px;
-    padding: 0px 16px;
-    display: flex;
-    align-items: center;
-    justify-content:center;
+    text-decoration: none;
 }
 
-.button2:hover {
-    background-color: $orange_bistre;
-    transition: all 0.2s ease;
+
+@media screen and (max-width:$breakpoint-sm){
+    .button{
+        width: 180px;
+        height: 45px;
+    }
 }
 
-.button3{
-    color: $white;
-    background-color: $black;
-    font-family: $fontfamily-gothic;
-    font-size: $S;
-    display: block;
-    width: 200px;
-    height: 55px;
-    padding: 0px 16px;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-}
-
-.button3:hover {
-    background-color: $orange_bistre;
-    transition: all 0.2s ease;
+@media screen and (max-width:$breakpoint-md){
+    .button{
+        width: 150px;
+        height: 55px;
+    }
 }
