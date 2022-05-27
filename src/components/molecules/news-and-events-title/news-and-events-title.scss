@@ -1,0 +1,34 @@
+@use "../../variables" as *;
+
+.newstitle {
+  & > .newstitle-1 {
+    font-family: $fontfamily-mincho;
+    font-weight: 400;
+    font-size: $fontsize-xxl;
+    line-height: 57.48px;
+    color: $black;
+    width: 105px;
+    height: 57px;
+  }
+
+  & > .newstitle-2 {
+    font-weight: 400;
+    font-size: $fontsize-m;
+    line-height: 23.17px;
+    color: $black;
+    width: 64px;
+    height: 23px;
+    position: absolute;
+    top: 35px;
+    left: 137px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-md) {
+  .newstitle {
+    & > .newstitle-1 {
+      width: 53px;
+      height: 29px;
+    }
+  }
+}
