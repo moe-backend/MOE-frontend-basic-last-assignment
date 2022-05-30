@@ -1,0 +1,24 @@
+@use "../../variables" as *;
+
+.plan-list1 {
+  color: $white;
+  background-color: $orange_zorba;
+  font-weight: 700;
+  font-size: $fontsize-l;
+  width: 220px;
+  height: 69px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+div:nth-child(3) {
+  font-weight: 400;
+  font-size: $fontsize-s;
+  line-height: 20.27px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
