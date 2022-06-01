@@ -1,24 +1,99 @@
 @use "../../variables" as *;
+.plan {
+  &.standard {
+    border: 1px solid $orange_bistre;
+  }
+  .plan-head {
+    color: $white;
+    background-color: $orange_zorba;
+    font-weight: 700;
+    font-size: $fontsize-l;
+    width: 220px;
+    height: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
 
-.plan-list1 {
-  color: $white;
-  background-color: $orange_zorba;
-  font-weight: 700;
-  font-size: $fontsize-l;
-  width: 220px;
-  height: 69px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  .plan-price {
+    color: $orange_bistre;
+    background-color: $gray_desertStorm;
+    font-weight: 700;
+    font-size: $fontsize-xxl;
+    line-height: 57.92px;
+    width: 220px;
+    height: 142px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .plan-item {
+    color: $black;
+    background-color: $white;
+    border: 1px solid $gray_desertStorm;
+    border-width: 1px;
+    font-weight: 400;
+    font-size: $fontsize-s;
+    width: 220px;
+    height: 60px;
+    padding: 20px 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
 }
 
-div:nth-child(3) {
-  font-weight: 400;
-  font-size: $fontsize-s;
-  line-height: 20.27px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+.plan standard {
+  border: 1px solid $orange_bistre;
+  .plan-item-7 {
+    color: $white;
+    background-color: $orange_bistre;
+    font-weight: 700;
+    font-size: $fontsize-l;
+    width: 220px;
+    height: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .plan-item-8 {
+    color: $orange_bistre;
+    background-color: $gray_desertStorm;
+    font-weight: 700;
+    font-size: $fontsize-xxl;
+    line-height: 57.92px;
+    width: 220px;
+    height: 142px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  p:nth-child(3),
+  p:nth-child(4),
+  p:nth-child(5),
+  p:nth-child(6) {
+    color: $black;
+    background-color: $white;
+    border: 1px solid $gray_desertStorm;
+    border-width: 1px;
+    font-weight: 400;
+    font-size: $fontsize-s;
+    width: 220px;
+    height: 60px;
+    padding: 20px 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
 }
