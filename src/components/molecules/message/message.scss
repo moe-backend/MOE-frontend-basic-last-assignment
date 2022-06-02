@@ -2,31 +2,36 @@
 
 .message {
   text-align: center;
-  padding: 52px 20px;
+  padding: 32px 20px;
 
   & > .title {
     font-family: $fontfamily-mincho;
-    font-size: $fontsize-xl;
+    font-size: $fontsize-l;
     font-weight: 400;
-    line-height: 54px;
-    margin-bottom: 10px;
+    line-height: 30px;
+    margin-bottom: 8px;
   }
 
   & > .explain {
     font-size: $fontsize-s;
     font-weight: 400;
-    line-height: 36px;
+    line-height: 28px;
     margin-bottom: 0;
   }
+}
 
-  @media screen and (max-width: $breakpoint-md) {
-    .title {
-      font-size: $fontsize-l;
-      line-height: 30px;
+@media screen and (min-width: $breakpoint-lg) {
+  .message {
+    padding: 52px 20px;
+
+    & > .title {
+      font-size: $fontsize-xl;
+      line-height: 54px;
+      margin-bottom: 10px;
     }
 
-    .explain {
-      line-height: 28px;
+    & > .explain {
+      line-height: 36px;
     }
   }
 }
