@@ -3,13 +3,13 @@
 .newstitle {
   display: flex;
   align-items: center;
+  margin-bottom: 32px;
 
   & > .newstitle-1 {
     font-family: $fontfamily-mincho;
     font-weight: 400;
-    font-size: $fontsize-xxl;
-    line-height: 57.48px;
-    color: $black;
+    font-size: $fontsize-l;
+    line-height: 28.74px;
     margin-right: 16px;
   }
 
@@ -17,14 +17,14 @@
     font-weight: 400;
     font-size: $fontsize-m;
     line-height: 23.17px;
-    color: $black;
   }
 }
 
-@media screen and (max-width: $breakpoint-md) {
+@media screen and (min-width: $breakpoint-lg) {
   .newstitle {
     & > .newstitle-1 {
-      font-size: $fontsize-l;
+      font-size: $fontsize-xxl;
+      line-height: 57.48px;
     }
   }
 }
