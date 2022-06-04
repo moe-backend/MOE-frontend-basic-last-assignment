@@ -28,9 +28,7 @@
     margin-bottom: 0;
 
     @media screen and (min-width: $breakpoint-lg) {
-      & > .explain {
-        line-height: 36px;
-      }
+      line-height: 36px;
     }
   }
 }
