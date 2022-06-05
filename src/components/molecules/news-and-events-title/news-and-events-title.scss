@@ -5,26 +5,24 @@
   align-items: center;
   margin-bottom: 32px;
 
-  & > .newstitle-1 {
+  .newstitle-left {
     font-family: $fontfamily-mincho;
     font-weight: 400;
     font-size: $fontsize-l;
-    line-height: 28.74px;
+    line-height: 29px;
     margin-right: 16px;
+    margin-bottom: 0;
+
+    @media screen and (min-width: $breakpoint-lg) {
+      font-size: $fontsize-xxl;
+      line-height: 57px;
+    }
   }
 
-  & > .newstitle-2 {
+  .newstitle-right {
     font-weight: 400;
     font-size: $fontsize-m;
-    line-height: 23.17px;
-  }
-}
-
-@media screen and (min-width: $breakpoint-lg) {
-  .newstitle {
-    & > .newstitle-1 {
-      font-size: $fontsize-xxl;
-      line-height: 57.48px;
-    }
+    line-height: 23px;
+    margin-bottom: 0;
   }
 }
