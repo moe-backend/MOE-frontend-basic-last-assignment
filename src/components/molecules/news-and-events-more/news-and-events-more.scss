@@ -1,12 +1,12 @@
 @use "../../variables" as *;
 
 a {
-  width: 84px;
+  width: 112px;
   height: 20px;
   font-weight: 400;
   font-size: $fontsize-s;
   color: $black;
-  line-height: 20.27px;
+  line-height: 20px;
   transition: all 0.2s ease;
 
   & > i {
