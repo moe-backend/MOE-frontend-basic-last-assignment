@@ -1,16 +1,16 @@
 @use "../../variables" as *;
 
-.newstitle {
+.news-title {
   display: flex;
   align-items: center;
   margin-bottom: 32px;
+  gap: 16px;
 
-  .newstitle-left {
+  .news-title-main {
     font-family: $fontfamily-mincho;
     font-weight: 400;
     font-size: $fontsize-l;
     line-height: 29px;
-    margin-right: 16px;
     margin-bottom: 0;
 
     @media screen and (min-width: $breakpoint-lg) {
@@ -19,7 +19,7 @@
     }
   }
 
-  .newstitle-right {
+  .news-title-sub {
     font-weight: 400;
     font-size: $fontsize-m;
     line-height: 23px;
