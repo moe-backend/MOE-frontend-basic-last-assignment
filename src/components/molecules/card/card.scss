@@ -1,17 +1,44 @@
 @use "../../variables" as *;
+.card {
+  position: relative;
 
-.card-text {
-  text-align: center;
-}
+  .card-img-top {
+    height: 382.41px;
+  }
 
-.button {
-  margin: 0 auto;
-}
+  .triangle {
+    position: absolute;
+    border: 150px solid $white;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    height: 0;
+    width: 0;
+  }
 
-.triangle4 {
-  border: 100px solid $white;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  height: 0;
-  width: 0;
+  h5 {
+    position: absolute;
+    left: 4px;
+    font-weight: 700;
+    font-size: $fontsize-l;
+    line-height: 29px;
+    color: $orange_bistre;
+    width: 91px;
+    height: 29px;
+    margin-bottom: 0;
+  }
+
+  .card-body {
+    height: 183px;
+  }
+  .card-text {
+    text-align: center;
+    font-size: $fontsize-s;
+  }
+
+  .button {
+    margin: 0 auto;
+  }
+
+  @media (min-width: $breakpoint-md) {
+  }
 }
