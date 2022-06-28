@@ -1,0 +1,28 @@
+@use "../../variables" as *;
+
+.news-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  gap: 16px;
+
+  .news-title-main {
+    font-family: $fontfamily-mincho;
+    font-weight: 400;
+    font-size: $fontsize-l;
+    line-height: 29px;
+    margin-bottom: 0;
+
+    @media screen and (min-width: $breakpoint-lg) {
+      font-size: $fontsize-xxl;
+      line-height: 57px;
+    }
+  }
+
+  .news-title-sub {
+    font-weight: 400;
+    font-size: $fontsize-m;
+    line-height: 23px;
+    margin-bottom: 0;
+  }
+}
