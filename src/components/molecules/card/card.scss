@@ -4,6 +4,10 @@
 
   .card-img-top {
     height: 382.41px;
+    transition: all 0.5s ease;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   .triangle {
@@ -20,7 +24,6 @@
     left: 4px;
     font-weight: 700;
     font-size: $fontsize-l;
-    line-height: 29px;
     color: $orange_bistre;
     width: 91px;
     height: 29px;
@@ -29,16 +32,18 @@
 
   .card-body {
     height: 183px;
-  }
-  .card-text {
-    text-align: center;
-    font-size: $fontsize-s;
-  }
+    padding: 0;
 
-  .button {
-    margin: 0 auto;
-  }
+    .card-text {
+      margin-top: 32px;
+      text-align: center;
+      font-size: $fontsize-s;
+    }
 
-  @media (min-width: $breakpoint-md) {
+    .button {
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
