@@ -1,9 +1,9 @@
 @use "../../variables" as *;
 
-a {
+.news-and-events-more {
   font-size: $fontsize-s;
   color: $black;
-  transition: all 0.2s ease;
+  transition: color 0.2s ease;
 
   & > i {
     margin-left: 16px;
