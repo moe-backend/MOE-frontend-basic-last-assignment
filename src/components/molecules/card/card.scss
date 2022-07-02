@@ -1,12 +1,16 @@
 @use "../../variables" as *;
 .card {
+  border: none;
+  border-radius: 0;
   position: relative;
+  overflow: hidden;
 
   .card-img-top {
-    height: 382.41px;
     transition: all 0.5s ease;
-    &:hover {
-      transform: scale(1.2);
+    @media screen and (min-width: $breakpoint-sm) {
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
 
@@ -25,25 +29,20 @@
     font-weight: 700;
     font-size: $fontsize-l;
     color: $orange_bistre;
-    width: 91px;
-    height: 29px;
     margin-bottom: 0;
   }
 
   .card-body {
-    height: 183px;
-    padding: 0;
+    padding: 32px 37px;
 
     .card-text {
-      margin-top: 32px;
       text-align: center;
       font-size: $fontsize-s;
+      margin-bottom: 30px;
     }
 
     .button {
-      margin-top: 30px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto;
     }
   }
 }
