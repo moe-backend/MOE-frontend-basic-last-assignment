@@ -5,18 +5,22 @@
   position: relative;
   overflow: hidden;
 
-  .card-img-top {
-    transition: all 0.5s ease;
-    @media screen and (min-width: $breakpoint-sm) {
-      &:hover {
-        transform: scale(1.2);
+  .scale-box {
+    overflow: hidden;
+    .card-img-top {
+      border-radius: 0;
+      transition: all 0.5s ease;
+      @media screen and (min-width: $breakpoint-sm) {
+        &:hover {
+          transform: scale(1.2);
+        }
       }
     }
   }
 
   .triangle {
     position: absolute;
-    border: 150px solid $white;
+    border: 75px solid $white;
     border-right-color: transparent;
     border-bottom-color: transparent;
     height: 0;
