@@ -4,7 +4,7 @@ ul {
   padding-left: 0px;
 }
 
-.plan-odd {
+.plan {
   .plan-head {
     color: $white;
     background-color: $orange_zorba;
@@ -25,12 +25,12 @@ ul {
     .plan-price-main {
       display: flex;
       justify-content: center;
-      margin-top: 24px;
+      padding-top: 24px;
 
       .plan-price-unit {
         font-weight: 700;
         font-size: $fontsize-l;
-        margin-top: 29px;
+        padding-top: 29px;
       }
 
       .plan-price-amount {
@@ -55,12 +55,8 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 19px;
     margin-bottom: 0;
-    :nth-child(4) {
-      height: 80px;
-    }
   }
   &:nth-child(even) {
     border: 5px solid $orange_bistre;
