@@ -5,6 +5,10 @@ ul {
 }
 
 .plan {
+  @media screen and (max-width: $breakpoint-md) {
+    margin: 24px;
+  }
+
   .plan-head {
     color: $white;
     background-color: $orange_zorba;
