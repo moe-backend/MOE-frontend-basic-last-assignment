@@ -2,11 +2,12 @@
 ul {
   list-style: none;
   padding-left: 0px;
+  margin: 0;
 }
 
 .plan {
   @media screen and (max-width: $breakpoint-md) {
-    margin: 24px;
+    margin-bottom: 24px;
   }
 
   .plan-head {
@@ -17,7 +18,6 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 0;
     padding: 20px 40px;
   }
 
@@ -49,7 +49,8 @@ ul {
       font-size: $fontsize-s;
       display: flex;
       justify-content: center;
-      margin-bottom: 24px;
+      padding-bottom: 24px;
+      margin-bottom: 0;
     }
   }
   .plan-item {
