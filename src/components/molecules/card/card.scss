@@ -10,7 +10,7 @@
     .card-img-top {
       border-radius: 0;
       transition: all 0.5s ease;
-      @media screen and (min-width: $breakpoint-sm) {
+      @media screen and (min-width: $breakpoint-md) {
         &:hover {
           transform: scale(1.2);
         }
@@ -37,7 +37,11 @@
   }
 
   .card-body {
-    padding: 32px 37px;
+    padding: 32px 46px;
+    background-color: $white_smoke;
+    @media screen and (min-width: $breakpoint-md) {
+      padding: 32px 35px;
+    }
 
     .card-text {
       text-align: center;
