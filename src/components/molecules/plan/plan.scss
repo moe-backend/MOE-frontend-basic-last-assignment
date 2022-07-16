@@ -6,8 +6,10 @@ ul {
 }
 
 .plan {
-  @media screen and (max-width: $breakpoint-md) {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: $breakpoint-md) {
+    margin-bottom: 0px;
   }
 
   .plan-head {
@@ -18,7 +20,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 40px;
+    padding: 20px 200px;
   }
 
   .plan-price {
@@ -27,21 +29,16 @@ ul {
     border: 1px solid $gray_gainsboro;
 
     .plan-price-main {
+      font-weight: 700;
+      font-size: $fontsize-xxl;
       display: flex;
       justify-content: center;
       padding-top: 24px;
+      align-items: end;
 
-      .plan-price-unit {
-        font-weight: 700;
+      span {
         font-size: $fontsize-l;
-        padding-top: 29px;
-      }
-
-      .plan-price-amount {
-        font-weight: 700;
-        font-size: $fontsize-xxl;
-        display: flex;
-        justify-content: center;
+        padding-right: 4px;
       }
     }
 
@@ -60,8 +57,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 19px;
-    margin-bottom: 0;
+    padding: 20px;
   }
   &:nth-child(even) {
     border: 5px solid $orange_bistre;
@@ -75,8 +71,7 @@ ul {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 0;
-      padding: 15.5px 40px;
+      padding: 15.5px 200px;
     }
   }
 }
