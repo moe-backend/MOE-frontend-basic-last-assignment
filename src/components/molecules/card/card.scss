@@ -1,0 +1,56 @@
+@use "../../variables" as *;
+.card {
+  border: none;
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+
+  .scale-box {
+    overflow: hidden;
+    .card-img-top {
+      border-radius: 0;
+      transition: all 0.5s ease;
+      @media screen and (min-width: $breakpoint-md) {
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  .triangle {
+    position: absolute;
+    border: 75px solid $white;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    height: 0;
+    width: 0;
+  }
+
+  h5 {
+    position: absolute;
+    left: 4px;
+    font-weight: 700;
+    font-size: $fontsize-l;
+    color: $orange_bistre;
+    margin-bottom: 0;
+  }
+
+  .card-body {
+    padding: 32px 46px;
+    background-color: $white_smoke;
+    @media screen and (min-width: $breakpoint-md) {
+      padding: 32px 35px;
+    }
+
+    .card-text {
+      text-align: center;
+      font-size: $fontsize-s;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      margin: 0 auto;
+    }
+  }
+}
