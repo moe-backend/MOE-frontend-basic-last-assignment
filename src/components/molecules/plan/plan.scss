@@ -30,15 +30,16 @@ ul {
 
     .plan-price-main {
       font-weight: 700;
-      font-size: $fontsize-xxl;
       display: flex;
       justify-content: center;
-      padding-top: 24px;
       align-items: end;
-
-      span {
+      padding-top: 24px;
+      p::first-letter {
         font-size: $fontsize-l;
         padding-right: 4px;
+      }
+      span {
+        font-size: $fontsize-xxl;
       }
     }
 
