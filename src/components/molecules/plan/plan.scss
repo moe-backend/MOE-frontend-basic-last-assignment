@@ -32,14 +32,15 @@ ul {
       font-weight: 700;
       display: flex;
       justify-content: center;
-      align-items: end;
       padding-top: 24px;
-      p::first-letter {
-        font-size: $fontsize-l;
-        padding-right: 4px;
-      }
       span {
         font-size: $fontsize-xxl;
+      }
+      ::before {
+        content: "￥";
+        font-size: $fontsize-l;
+        padding-right: 4px;
+        vertical-align: bottom;
       }
     }
 
