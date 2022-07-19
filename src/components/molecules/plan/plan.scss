@@ -1,5 +1,5 @@
 @use "../../variables" as *;
-ul {
+.plan {
   list-style: none;
   padding-left: 0px;
   margin: 0;
@@ -33,7 +33,7 @@ ul {
       display: flex;
       justify-content: center;
       padding-top: 24px;
-      span {
+      .plan-price-amount {
         font-size: $fontsize-xxl;
       }
       ::before {
