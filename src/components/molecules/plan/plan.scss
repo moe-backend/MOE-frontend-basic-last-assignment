@@ -1,13 +1,9 @@
 @use "../../variables" as *;
+
 .plan {
   list-style: none;
   padding-left: 0px;
-  margin: 0;
-}
-
-.plan {
-  margin-bottom: 24px;
-
+  margin: 0 0 24px 0;
   @media screen and (min-width: $breakpoint-md) {
     margin-bottom: 0px;
   }
