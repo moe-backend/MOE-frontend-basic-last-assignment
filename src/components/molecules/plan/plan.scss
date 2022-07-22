@@ -1,0 +1,75 @@
+@use "../../variables" as *;
+
+.plan {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0 0 24px 0;
+  @media screen and (min-width: $breakpoint-md) {
+    margin-bottom: 0px;
+  }
+
+  .plan-head {
+    color: $white;
+    background-color: $orange_zorba;
+    font-weight: 700;
+    font-size: $fontsize-l;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 200px;
+  }
+
+  .plan-price {
+    color: $orange_bistre;
+    background-color: $gray_desertStorm;
+    border: 1px solid $gray_gainsboro;
+
+    .plan-price-main {
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      padding-top: 24px;
+      .plan-price-amount {
+        font-size: $fontsize-xxl;
+      }
+      ::before {
+        content: "￥";
+        font-size: $fontsize-l;
+        padding-right: 4px;
+        vertical-align: bottom;
+      }
+    }
+
+    .plan-price-sub {
+      font-size: $fontsize-s;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 24px;
+      margin-bottom: 0;
+    }
+  }
+  .plan-item {
+    border: 1px solid $gray_gainsboro;
+    border-top: none;
+    font-size: $fontsize-s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  &:nth-child(even) {
+    border: 5px solid $orange_bistre;
+    box-sizing: border-box;
+
+    .plan-head {
+      color: $white;
+      background-color: $orange_bistre;
+      font-weight: 700;
+      font-size: $fontsize-l;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15.5px 200px;
+    }
+  }
+}
