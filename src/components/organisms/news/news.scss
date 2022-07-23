@@ -4,8 +4,12 @@
   .article-item {
     border: 1px solid $gray_gainsboro;
     border-bottom: none;
+    transition: all 0.2s ease;
     &:last-child {
       border-bottom: 1px solid $gray_gainsboro;
+    }
+    &:hover {
+      text-decoration: none;
     }
     .article-date {
       font-weight: 400;
@@ -15,6 +19,7 @@
       padding: 20px 380px 10px 20px;
     }
     .article-content {
+      color: $black;
       margin-bottom: 0;
       padding: 0px 29px 20px 20px;
       white-space: nowrap;
