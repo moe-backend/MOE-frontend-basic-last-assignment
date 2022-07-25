@@ -1,21 +1,23 @@
 @use "../../variables" as *;
 
 .article {
+  a {
+    text-decoration: none;
+  }
   .article-item {
     border: 1px solid $gray_gainsboro;
     border-bottom: none;
     transition: all 0.2s ease;
+    &:hover .article-content {
+      color: $orange_bistre;
+    }
     &:last-child {
       border-bottom: 1px solid $gray_gainsboro;
     }
-    &:hover {
-      text-decoration: none;
-    }
-    .article-date {
+    time {
       font-weight: 400;
       font-size: $fontsize-xs;
       color: $gray_nobel;
-      margin-bottom: 0;
       padding: 20px 380px 10px 20px;
     }
     .article-content {
