@@ -1,33 +1,43 @@
 @use "../../variables" as *;
 
 .article {
-  a {
-    text-decoration: none;
-  }
-  .article-item {
+  .img-and-text {
+    display: flex;
     border: 1px solid $gray_gainsboro;
     border-bottom: none;
-    transition: all 0.2s ease;
-    &:hover .article-content {
-      color: $orange_bistre;
-    }
     &:last-child {
       border-bottom: 1px solid $gray_gainsboro;
     }
-    .article-content {
-      color: $black;
-      margin-bottom: 0;
-      padding: 26px 24px 46px 24px;
+    .events-img-left {
       overflow: hidden;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 3;
     }
-    time {
-      font-weight: 400;
-      font-size: $fontsize-xs;
-      color: $gray_nobel;
-      padding: 8px 24px 46px 24px;
+
+    transition: all 0.5s ease;
+    &:hover .card-img-top {
+      transform: scale(1.2);
+    }
+    img {
+      border-radius: 0;
+    }
+
+    .article-item {
+      a {
+        text-decoration: none;
+      }
+      padding: 26px 24px;
+
+      .article-content {
+        color: $black;
+        margin-bottom: 0;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+      }
+      time {
+        font-size: $fontsize-xs;
+        color: $gray_nobel;
+      }
     }
   }
 }
