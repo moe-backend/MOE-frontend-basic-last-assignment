@@ -5,7 +5,8 @@
     text-decoration: none;
   }
   .article-item {
-    padding: 20px 26px 20px 20px;
+    height: 85px;
+    padding: 20px;
     border: 1px solid $gray_gainsboro;
     border-bottom: none;
     transition: all 0.2s ease;
@@ -19,6 +20,8 @@
       display: block;
       font-size: $fontsize-xs;
       color: $gray_nobel;
+      padding-bottom: 10px;
+      line-height: 12px;
     }
     .article-content {
       color: $black;
@@ -26,6 +29,7 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      line-height: 23px;
     }
   }
 }
