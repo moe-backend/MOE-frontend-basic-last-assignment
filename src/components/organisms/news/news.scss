@@ -5,7 +5,6 @@
     text-decoration: none;
   }
   .article-item {
-    height: 85px;
     padding: 20px;
     border: 1px solid $gray_gainsboro;
     border-bottom: none;
@@ -20,7 +19,7 @@
       display: block;
       font-size: $fontsize-xs;
       color: $gray_nobel;
-      padding-bottom: 10px;
+      margin-bottom: 9px;
       line-height: 12px;
     }
     .article-content {
