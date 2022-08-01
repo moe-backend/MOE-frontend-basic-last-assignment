@@ -1,25 +1,24 @@
 @use "../../variables" as *;
 
-.article {
+.article-with-img {
   .img-and-text {
+    transition: all 0.5s ease;
+    &:hover .events-img-left {
+      transform: scale(1.2);
+    }
     display: flex;
     border: 1px solid $gray_gainsboro;
     border-bottom: none;
     &:last-child {
       border-bottom: 1px solid $gray_gainsboro;
     }
-    .events-img-left {
+    .events-img-frame {
       overflow: hidden;
-    }
 
-    transition: all 0.5s ease;
-    &:hover .card-img-top {
-      transform: scale(1.2);
+      .events-img-left {
+        border-radius: 0;
+      }
     }
-    img {
-      border-radius: 0;
-    }
-
     .article-item {
       a {
         text-decoration: none;
@@ -37,6 +36,7 @@
       time {
         font-size: $fontsize-xs;
         color: $gray_nobel;
+        margin-top: 8px;
       }
     }
   }
