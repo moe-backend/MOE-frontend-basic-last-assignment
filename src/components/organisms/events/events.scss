@@ -1,10 +1,10 @@
 @use "../../variables" as *;
 
 .article-with-img {
-  transition: all 0.5s ease;
   .img-and-text {
     text-decoration: none;
     display: block;
+    transition: all 0.5s ease;
     &:hover .events-img-left {
       transform: scale(1.2);
     }
