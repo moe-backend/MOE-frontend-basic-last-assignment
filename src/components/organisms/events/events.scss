@@ -1,8 +1,10 @@
 @use "../../variables" as *;
 
 .article-with-img {
+  transition: all 0.5s ease;
   .img-and-text {
-    transition: all 0.5s ease;
+    text-decoration: none;
+    display: block;
     &:hover .events-img-left {
       transform: scale(1.2);
     }
@@ -14,17 +16,12 @@
     }
     .events-img-frame {
       overflow: hidden;
-
       .events-img-left {
         border-radius: 0;
       }
     }
     .article-item {
-      a {
-        text-decoration: none;
-      }
       padding: 26px 24px;
-
       .article-content {
         color: $black;
         margin-bottom: 0;
@@ -41,7 +38,6 @@
     }
   }
 }
-
 .news-and-events-more-parent {
   text-align: right;
   margin-top: 30px;
