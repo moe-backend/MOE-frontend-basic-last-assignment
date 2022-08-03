@@ -4,8 +4,9 @@
   .img-and-text {
     text-decoration: none;
     display: block;
-    transition: all 0.5s ease;
+
     &:hover .events-img-left {
+      transition: all 0.5s ease;
       transform: scale(1.2);
     }
     display: flex;
@@ -16,9 +17,6 @@
     }
     .events-img-frame {
       overflow: hidden;
-      .events-img-left {
-        border-radius: 0;
-      }
     }
     .article-item {
       padding: 26px 24px;
@@ -41,4 +39,10 @@
 .news-and-events-more-parent {
   text-align: right;
   margin-top: 30px;
+}
+
+@media screen and (max-width: $breakpoint-lg) {
+  .events-img-left {
+    display: none;
+  }
 }
