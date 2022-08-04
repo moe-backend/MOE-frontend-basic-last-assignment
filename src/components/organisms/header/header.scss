@@ -1,1 +1,36 @@
 @use "../../variables" as *;
+
+nav {
+  background-color: $black;
+}
+.nav-link {
+  color: $white;
+}
+.navbar-toggler {
+  border: none;
+}
+.drop-down-menu {
+  color: $black;
+}
+.button {
+  margin-left: 488px;
+}
+.nav-item {
+  padding: 0 16px;
+  position: relative;
+  .concept-label {
+    display: flex;
+    justify-content: space-between;
+    button {
+      outline: none;
+      border: none;
+      background-color: transparent;
+      @media screen and (min-width: $breakpoint-xl) {
+        display: none;
+      }
+    }
+  }
+  .collapse {
+    position: absolute;
+  }
+}
