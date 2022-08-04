@@ -1,5 +1,5 @@
 import Item_About from "../components/organisms/about/about.html";
-import "../components/organisms/about/about.css";
+import "../components/organisms/about/about.scss";
 
 export default { title: "Organisms/About" };
 
