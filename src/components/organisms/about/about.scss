@@ -1,7 +1,15 @@
 @use "../../variables" as *;
-.title {
-  color: $orange_bistre;
+.message {
+  background-color: $white_smoke;
+  padding: 32px 24px;
+  @media screen and (min-width: $breakpoint-lg) {
+    padding: 52px 26.5px;
+  }
+  .title {
+    color: $orange_bistre;
+  }
 }
+
 img {
   max-width: 100%;
   height: auto;
