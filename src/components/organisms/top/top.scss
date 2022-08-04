@@ -1,0 +1,21 @@
+@use "../../variables" as *;
+.box {
+  position: relative;
+  .top-img-background {
+    width: 100%;
+  }
+  .vertical-title {
+    color: $white;
+    font-family: $fontfamily-mincho;
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+}
+.message {
+  color: $white;
+  background-color: $black;
+}
