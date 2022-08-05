@@ -1,39 +1,40 @@
 @use "../../variables" as *;
-
-.article {
-  a {
-    text-decoration: none;
+.organisms-news {
+  .article {
+    a {
+      text-decoration: none;
+    }
+    .article-item {
+      padding: 20px;
+      border: 1px solid $gray_gainsboro;
+      border-bottom: none;
+      transition: all 0.2s ease;
+      &:hover .article-content {
+        color: $orange_bistre;
+      }
+      &:last-child {
+        border-bottom: 1px solid $gray_gainsboro;
+      }
+      time {
+        display: block;
+        font-size: $fontsize-xs;
+        color: $gray_nobel;
+        margin-bottom: 8px;
+        line-height: 12px;
+      }
+      .article-content {
+        color: $black;
+        margin-bottom: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 23px;
+      }
+    }
   }
-  .article-item {
-    padding: 20px;
-    border: 1px solid $gray_gainsboro;
-    border-bottom: none;
-    transition: all 0.2s ease;
-    &:hover .article-content {
-      color: $orange_bistre;
-    }
-    &:last-child {
-      border-bottom: 1px solid $gray_gainsboro;
-    }
-    time {
-      display: block;
-      font-size: $fontsize-xs;
-      color: $gray_nobel;
-      margin-bottom: 8px;
-      line-height: 12px;
-    }
-    .article-content {
-      color: $black;
-      margin-bottom: 0;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      line-height: 23px;
-    }
-  }
-}
 
-.news-and-events-more-parent {
-  text-align: right;
-  margin-top: 30px;
+  .news-and-events-more-parent {
+    text-align: right;
+    margin-top: 30px;
+  }
 }
