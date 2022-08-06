@@ -3,6 +3,35 @@
 nav {
   background-color: $black;
 }
+.organisms-header {
+  height: 90px;
+  @media screen and (max-width: $breakpoint-xl) {
+    height: auto;
+  }
+  .navbar {
+    height: 100%;
+    padding: 0 30px;
+    .logo-and-icon {
+      @media screen and (max-width: $breakpoint-xl) {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 60px;
+        align-items: center;
+      }
+    }
+  }
+}
+.navbar-brand {
+  width: 140px;
+  height: 24px;
+  padding: 0;
+  margin: 0;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
 .nav-link {
   color: $white;
 }
@@ -12,9 +41,7 @@ nav {
 .drop-down-menu {
   color: $black;
 }
-.button {
-  margin-left: 488px;
-}
+
 .nav-item {
   padding: 0 16px;
   position: relative;
@@ -30,7 +57,12 @@ nav {
       }
     }
   }
-  .collapse {
+  .concept-content {
     position: absolute;
+    left: 0;
+    top: 65px;
+    @media screen and (max-width: $breakpoint-xl) {
+      position: static;
+    }
   }
 }
