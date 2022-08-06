@@ -3,7 +3,6 @@
   .article-with-img {
     .img-and-text {
       text-decoration: none;
-      display: block;
       &:hover .events-img-left {
         transition: all 0.5s ease;
         transform: scale(1.2);
@@ -15,10 +14,17 @@
         border-bottom: 1px solid $gray_gainsboro;
       }
       .events-img-frame {
+        flex: 0 0 auto;
         overflow: hidden;
       }
       .article-item {
-        padding: 26px 24px;
+        padding: 0 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media screen and (max-width: $breakpoint-lg) {
+          padding: 10px 20px 16px;
+        }
         .article-content {
           color: $black;
           margin-bottom: 0;
