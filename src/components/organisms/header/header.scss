@@ -10,7 +10,7 @@ nav {
   }
   .navbar {
     height: 100%;
-    padding: 0 30px;
+    padding: 0 16px;
     .logo-and-icon {
       @media screen and (max-width: $breakpoint-xl) {
         display: flex;
@@ -34,6 +34,9 @@ nav {
 }
 .nav-link {
   color: $white;
+  padding: 0px;
+  margin-bottom: 30px;
+  vertical-align: middle;
 }
 .navbar-toggler {
   border: none;
@@ -43,7 +46,7 @@ nav {
 }
 
 .nav-item {
-  padding: 0 16px;
+  padding: 0 px;
   position: relative;
   .concept-label {
     display: flex;
@@ -65,4 +68,9 @@ nav {
       position: static;
     }
   }
+}
+.button {
+  padding: 18px 12px;
+  text-decoration: none;
+  display: block;
 }
