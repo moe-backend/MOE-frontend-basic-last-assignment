@@ -12,9 +12,6 @@
       &:hover .article-content {
         color: $orange_bistre;
       }
-      &:last-child {
-        border-bottom: 1px solid $gray_gainsboro;
-      }
       time {
         display: block;
         font-size: $fontsize-xs;
@@ -30,6 +27,9 @@
         text-overflow: ellipsis;
         line-height: 23px;
       }
+    }
+    .article-item-last {
+      border-bottom: 1px solid $gray_gainsboro;
     }
   }
 
