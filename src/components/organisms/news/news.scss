@@ -3,6 +3,9 @@
   .article {
     a {
       text-decoration: none;
+      &:last-child .article-item {
+        border-bottom: 1px solid $gray_gainsboro;
+      }
     }
     .article-item {
       padding: 20px;
@@ -27,9 +30,6 @@
         text-overflow: ellipsis;
         line-height: 23px;
       }
-    }
-    .article-item-last {
-      border-bottom: 1px solid $gray_gainsboro;
     }
   }
 
