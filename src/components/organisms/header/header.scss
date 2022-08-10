@@ -23,20 +23,25 @@ nav {
   }
 }
 .navbar-brand {
-  width: 140px;
-  height: 24px;
   padding: 0;
   margin: 0;
   img {
-    width: 100%;
-    height: 100%;
+    width: 140px;
+    height: 24px;
   }
 }
 .nav-link {
+  font-size: $fontsize-s;
+  @media screen and (min-width: $breakpoint-xl) {
+    margin: 35px 20px;
+  }
   color: $white;
+  &:hover {
+    color: $white;
+  }
+  text-decoration: none;
   padding: 0px;
-  margin-bottom: 30px;
-  vertical-align: middle;
+  margin: 15px 0 15px;
 }
 .navbar-toggler {
   border: none;
@@ -63,7 +68,7 @@ nav {
   .concept-content {
     position: absolute;
     left: 0;
-    top: 65px;
+    top: 90px;
     @media screen and (max-width: $breakpoint-xl) {
       position: static;
     }
