@@ -1,17 +1,30 @@
 @use "../../variables" as *;
 
-nav {
-  background-color: $black;
-}
 .organisms-header {
   height: 90px;
   @media screen and (max-width: $breakpoint-xl) {
     height: auto;
   }
   .navbar {
+    background-color: $black;
     height: 100%;
-    padding: 0 16px;
+    padding: 0 30px;
+    @media screen and (max-width: $breakpoint-xl) {
+      padding: 0 16px;
+    }
     .logo-and-icon {
+      .navbar-brand {
+        padding: 0;
+        margin: 0;
+        img {
+          width: 140px;
+          height: 24px;
+          @media screen and (max-width: $breakpoint-xl) {
+            width: 120px;
+            height: 20.56px;
+          }
+        }
+      }
       @media screen and (max-width: $breakpoint-xl) {
         display: flex;
         justify-content: space-between;
@@ -19,70 +32,70 @@ nav {
         height: 60px;
         align-items: center;
       }
-    }
-  }
-}
-.navbar-brand {
-  padding: 0;
-  margin: 0;
-  img {
-    width: 140px;
-    height: 24px;
-  }
-}
-.nav-link {
-  font-size: $fontsize-s;
-  @media screen and (min-width: $breakpoint-xl) {
-    margin: 35px 20px;
-  }
-  color: $white;
-  &:hover {
-    color: $white;
-  }
-  text-decoration: none;
-  padding: 0px;
-  margin: 15px 0 15px;
-}
-.navbar-toggler {
-  border: none;
-}
-.drop-down-menu {
-  color: $black;
-}
-
-.nav-item {
-  padding: 0 px;
-  position: relative;
-  .concept-label {
-    display: flex;
-    justify-content: space-between;
-    button {
-      outline: none;
-      border: none;
-      background-color: transparent;
-      @media screen and (min-width: $breakpoint-xl) {
-        display: none;
+      .navbar-toggler {
+        border: none;
+        padding: 0;
       }
     }
-  }
-  .concept-content {
-    position: absolute;
-    left: 0;
-    top: 90px;
-    @media screen and (max-width: $breakpoint-xl) {
-      position: static;
-    }
-  }
-}
-.button {
-  width: 220px;
-  height: 56px;
-  padding: 18px 12px;
-  text-decoration: none;
-  display: block;
-  @media screen and (max-width: $breakpoint-xl) {
-    &:hover {
-      background-color: $black;
+    .navbar-collapse {
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            font-size: $fontsize-s;
+            padding: 0;
+            @media screen and (min-width: $breakpoint-xl) {
+              margin: 35px 20px;
+            }
+            color: $white;
+            &:hover {
+              color: $white;
+              @media screen and (min-width: $breakpoint-xl) {
+                color: $gray_nobel;
+              }
+            }
+            text-decoration: none;
+            padding: 0px;
+            margin: 15px 0 15px;
+          }
+          .concept-label {
+            display: flex;
+            justify-content: space-between;
+            button {
+              outline: none;
+              border: none;
+              background-color: transparent;
+              @media screen and (min-width: $breakpoint-xl) {
+                display: none;
+              }
+            }
+          }
+          .concept-content {
+            .button {
+              width: 220px;
+              height: 56px;
+              padding: 18px;
+              @media screen and (max-width: $breakpoint-xl) {
+                padding: 18px 12px;
+              }
+              text-decoration: none;
+              display: block;
+              @media screen and (max-width: $breakpoint-xl) {
+                &:hover {
+                  background-color: $black;
+                }
+              }
+            }
+            position: absolute;
+            left: 0;
+            top: 90px;
+            @media screen and (max-width: $breakpoint-xl) {
+              position: static;
+            }
+          }
+          padding: 0 px;
+          position: relative;
+        }
+      }
     }
   }
 }
