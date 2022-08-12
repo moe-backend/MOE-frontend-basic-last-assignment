@@ -75,7 +75,14 @@ nav {
   }
 }
 .button {
+  width: 220px;
+  height: 56px;
   padding: 18px 12px;
   text-decoration: none;
   display: block;
+  @media screen and (max-width: $breakpoint-xl) {
+    &:hover {
+      background-color: $black;
+    }
+  }
 }
