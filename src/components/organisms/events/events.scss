@@ -1,0 +1,54 @@
+@use "../../variables" as *;
+.organisms-events {
+  .article-with-img {
+    .img-and-text {
+      text-decoration: none;
+      &:hover .events-img-left {
+        transition: all 0.5s ease;
+        transform: scale(1.2);
+      }
+      display: flex;
+      border: 1px solid $gray_gainsboro;
+      border-bottom: none;
+      &:last-child {
+        border-bottom: 1px solid $gray_gainsboro;
+      }
+      .events-img-frame {
+        flex: 0 0 auto;
+        overflow: hidden;
+      }
+      .article-item {
+        padding: 0 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media screen and (max-width: $breakpoint-lg) {
+          padding: 10px 20px 16px;
+        }
+        .article-content {
+          color: $black;
+          margin-bottom: 0;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+        }
+        time {
+          font-size: $fontsize-xs;
+          color: $gray_nobel;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+  .news-and-events-more-parent {
+    text-align: right;
+    margin-top: 30px;
+  }
+
+  @media screen and (max-width: $breakpoint-lg) {
+    .events-img-left {
+      display: none;
+    }
+  }
+}
