@@ -1,41 +1,59 @@
 @use "../../variables" as *;
-.footer-container {
-  display: flex;
-}
-i {
-  align-items: center;
-}
-.copyright {
-  color: $white;
-  background-color: $black;
+.contact {
   text-align: center;
-  padding: 16px 190.5px;
-}
-.icon-box {
-  margin: 20px auto 52px;
-  display: inline-block;
-}
-.fa-facebook-f {
-  margin-right: 17.08px;
-}
-.fa-twitter {
-  margin-right: 14.7px;
-}
-.fa-instagram {
-  margin-right: 15.75px;
-}
-.fa-wifi {
-  transform: rotate(45deg);
+  padding: 52px;
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 32px;
+  }
+  .footer-img-logo {
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: $fontsize-s;
+    margin-bottom: 20px;
+  }
+  .icon-box {
+    text-align: center;
+    .fa-facebook-f {
+      margin-right: 17.08px;
+    }
+    .fa-twitter {
+      margin-right: 14.7px;
+    }
+    .fa-instagram {
+      margin-right: 15.75px;
+    }
+    .fa-wifi {
+      transform: rotate(45deg);
+    }
+  }
 }
 .footer-box {
-  list-style: none;
   display: flex;
-  margin: 16px auto;
+  justify-content: center;
+  padding: 16px;
+  margin-bottom: 0;
+  background-color: $white_smoke;
+  border-top: 1px solid $gray_nobel;
   .footer-item {
+    font-size: $fontsize-s;
+    list-style: none;
     padding: 0px 8px;
     border-right: 1px solid $black;
     &:nth-child(8) {
       border-right: none;
     }
+    @media screen and (max-width: $breakpoint-md) {
+      border-right: none;
+      display: grid;
+    }
   }
+}
+.copyright {
+  font-size: $fontsize-xs;
+  color: $white;
+  background-color: $black;
+  text-align: center;
+  padding: 16px;
+  margin-bottom: 0;
 }
