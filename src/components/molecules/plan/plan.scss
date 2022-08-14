@@ -1,5 +1,4 @@
 @use "../../variables" as *;
-
 .plan {
   list-style: none;
   padding-left: 0px;
@@ -9,6 +8,7 @@
   }
 
   .plan-head {
+    white-space: nowrap;
     color: $white;
     background-color: $orange_zorba;
     font-weight: 700;
@@ -16,7 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 200px;
+    padding: 20px 0;
   }
 
   .plan-price {
@@ -57,10 +57,8 @@
     justify-content: center;
     padding: 20px;
   }
-  &:nth-child(even) {
+  &.recommend {
     border: 5px solid $orange_bistre;
-    box-sizing: border-box;
-
     .plan-head {
       color: $white;
       background-color: $orange_bistre;
@@ -69,7 +67,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 15.5px 200px;
+      padding-top: 15.5px;
+    }
+    .plan-item:last-child {
+      padding-bottom: 15.5px;
     }
   }
 }
