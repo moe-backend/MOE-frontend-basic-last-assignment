@@ -29,8 +29,6 @@
   }
 }
 .footer-box {
-  display: flex;
-  justify-content: center;
   padding: 16px;
   margin-bottom: 0;
   background-color: $white_smoke;
@@ -40,12 +38,17 @@
     list-style: none;
     padding: 0px 8px;
     border-right: 1px solid $black;
-    &:nth-child(8) {
+    &:last-child {
       border-right: none;
     }
-    @media screen and (max-width: $breakpoint-md) {
+    @media screen and (max-width: $breakpoint-lg) {
       border-right: none;
-      display: grid;
+      margin-bottom: 8px;
+      padding: 0;
+      &:nth-child(7),
+      &:nth-child(8) {
+        margin-bottom: 0;
+      }
     }
   }
 }
