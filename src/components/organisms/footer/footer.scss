@@ -41,7 +41,7 @@
     &:last-child {
       border-right: none;
     }
-    @media screen and (max-width: $breakpoint-lg) {
+    @media screen and (max-width: $breakpoint-md) {
       border-right: none;
       margin-bottom: 8px;
       padding: 0;
