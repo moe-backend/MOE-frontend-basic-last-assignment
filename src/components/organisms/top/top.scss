@@ -1,0 +1,32 @@
+@use "../../variables" as *;
+.organisms-top {
+  .box {
+    position: relative;
+    .top-img-background {
+      width: 100%;
+      height: 100vh;
+      @media screen and (max-width: $breakpoint-lg) {
+        height: 360px;
+        object-fit: cover;
+      }
+    }
+    .vertical-title {
+      font-size: $fontsize-xl;
+      color: $white;
+      font-family: $fontfamily-mincho;
+      writing-mode: vertical-rl;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      @media screen and (max-width: $breakpoint-lg) {
+        font-size: $fontsize-l;
+      }
+    }
+  }
+  .message {
+    color: $white;
+    background-color: $black;
+  }
+}
