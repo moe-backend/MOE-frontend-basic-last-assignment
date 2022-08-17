@@ -1,24 +1,15 @@
 @use "../../variables" as *;
-.plans {
-  .plan {
-    .plan-head {
-      padding: 20px;
+.organisms-plan {
+  .message {
+    padding-top: 0;
+    .title {
+      color: $orange_bistre;
     }
   }
-}
-
-.title {
-  color: $orange_bistre;
-}
-.button {
-  margin: 40px auto 0px;
-  @media screen and (max-width: $breakpoint-md) {
-    margin: 0px auto 15px;
+  .button {
+    margin: 40px auto 0px;
+    @media screen and (max-width: $breakpoint-md) {
+      margin: 0px auto 15px;
+    }
   }
-}
-.plan-box {
-  display: flex;
-}
-.message {
-  padding-top: 0;
 }
