@@ -1,0 +1,6 @@
+@use "../../variables" as *;
+.organisms-news {
+  @media screen and (max-width: $breakpoint-lg) {
+    margin-bottom: 35px;
+  }
+}
