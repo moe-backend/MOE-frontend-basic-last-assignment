@@ -1,0 +1,22 @@
+@use "../../variables" as *;
+.organisms-plan {
+  .message {
+    padding-top: 0;
+    .title {
+      color: $orange_bistre;
+    }
+  }
+  .container-fluid {
+    .row {
+      .col {
+        padding: 0 10px;
+      }
+    }
+  }
+  .button {
+    margin: 40px auto 0px;
+    @media screen and (max-width: $breakpoint-md) {
+      margin: 0px auto 15px;
+    }
+  }
+}
