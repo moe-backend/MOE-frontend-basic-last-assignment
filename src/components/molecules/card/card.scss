@@ -4,6 +4,7 @@
   border-radius: 0;
   position: relative;
   overflow: hidden;
+  height: 100%;
 
   .scale-box {
     overflow: hidden;
@@ -44,8 +45,9 @@
     }
 
     .card-text {
-      text-align: center;
       font-size: $fontsize-s;
+      line-height: 33px;
+      padding-bottom: 0;
       margin-bottom: 30px;
     }
 
