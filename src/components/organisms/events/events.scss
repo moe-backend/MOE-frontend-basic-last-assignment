@@ -1,6 +1,5 @@
 @use "../../variables" as *;
 .organisms-events {
-  height: 100vh;
   .article-with-img {
     .img-and-text {
       text-decoration: none;
@@ -17,9 +16,13 @@
       .events-img-frame {
         flex: 0 0 auto;
         overflow: hidden;
+        .events-img-left {
+          width: 221.11px;
+          height: 139px;
+        }
       }
       .article-item {
-        padding: 0 24px;
+        padding: 20px 24px;
         display: flex;
         flex-direction: column;
         justify-content: center;
