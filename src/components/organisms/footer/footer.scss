@@ -1,0 +1,78 @@
+@use "../../variables" as *;
+.organisms-footer {
+  .contact {
+    text-align: center;
+    padding: 52px;
+    @media screen and (max-width: $breakpoint-md) {
+      padding: 32px;
+    }
+    .footer-img-logo {
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: $fontsize-s;
+      margin-bottom: 20px;
+    }
+    .icon-box {
+      text-align: center;
+      .icon {
+        color: $black;
+        transition: all 0.2s ease;
+        &:hover {
+          color: $gray_nobel;
+        }
+        .fa-facebook-f {
+          margin-right: 17.08px;
+        }
+        .fa-twitter {
+          margin-right: 14.7px;
+        }
+        .fa-instagram {
+          margin-right: 15.75px;
+        }
+      }
+    }
+  }
+  .container-fluid {
+    .footer-box {
+      padding: 16px;
+      margin-bottom: 0;
+      background-color: $white_smoke;
+      border-top: 1px solid $gray_nobel;
+      .footer-item {
+        font-size: $fontsize-s;
+        list-style: none;
+        padding: 0px 8px;
+        border-right: 1px solid $black;
+        &:last-child {
+          border-right: none;
+        }
+        @media screen and (max-width: $breakpoint-md) {
+          border-right: none;
+          margin-bottom: 8px;
+          padding: 0;
+          &:nth-child(7),
+          &:nth-child(8) {
+            margin-bottom: 0;
+          }
+        }
+        .nav-link {
+          padding: 0;
+          color: $black;
+          transition: all 0.2s ease;
+          &:hover {
+            color: $orange_bistre;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    font-size: $fontsize-xs;
+    color: $white;
+    background-color: $black;
+    text-align: center;
+    padding: 16px;
+    margin-bottom: 0;
+  }
+}
