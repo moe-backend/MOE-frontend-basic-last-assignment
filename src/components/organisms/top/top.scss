@@ -12,6 +12,7 @@
       }
     }
     .vertical-title {
+      white-space: nowrap;
       font-size: $fontsize-xl;
       color: $white;
       font-family: $fontfamily-mincho;
