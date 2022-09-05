@@ -1,12 +1,11 @@
 @use "../../variables" as *;
 .organisms-plan {
   .message {
-    padding-top: 0;
     .title {
       color: $orange_bistre;
     }
   }
-  .container-fluid {
+  .container {
     .row {
       .col {
         padding: 0 10px;
@@ -14,7 +13,7 @@
     }
   }
   .button {
-    margin: 40px auto 0px;
+    margin: 40px auto 100px;
     @media screen and (max-width: $breakpoint-md) {
       margin: 0px auto 15px;
     }

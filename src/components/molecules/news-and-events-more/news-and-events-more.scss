@@ -4,11 +4,11 @@
   font-size: $fontsize-s;
   color: $black;
   transition: color 0.2s ease;
+  text-decoration: none;
   & > i {
     margin-left: 16px;
   }
   &:hover {
     color: $gray_nobel;
-    text-decoration: none;
   }
 }

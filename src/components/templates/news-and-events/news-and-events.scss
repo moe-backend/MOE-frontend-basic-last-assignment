@@ -1,6 +1,20 @@
 @use "../../variables" as *;
-.organisms-news {
-  @media screen and (max-width: $breakpoint-lg) {
-    margin-bottom: 35px;
+.templates-news-and-events {
+  padding: 68.5px auto 101.5px;
+  background-color: $white_smoke;
+  .article-item {
+    background-color: $white;
+  }
+  .organisms-news {
+    margin: 56px auto 94px;
+    @media screen and (max-width: $breakpoint-lg) {
+      margin: 65.5px auto 35px;
+    }
+  }
+  .organisms-events {
+    margin: 56px auto 94px;
+    @media screen and (max-width: $breakpoint-lg) {
+      margin: 0px auto 101.5px;
+    }
   }
 }

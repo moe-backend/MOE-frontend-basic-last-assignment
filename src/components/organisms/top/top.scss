@@ -1,5 +1,6 @@
 @use "../../variables" as *;
 .organisms-top {
+  margin-bottom: 40px;
   .box {
     position: relative;
     .top-img-background {
@@ -11,6 +12,7 @@
       }
     }
     .vertical-title {
+      white-space: nowrap;
       font-size: $fontsize-xl;
       color: $white;
       font-family: $fontfamily-mincho;
